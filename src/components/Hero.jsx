@@ -12,10 +12,10 @@ const Hero = () => {
           perfect flight
         </h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at
-          sed omnis corporis doloremque possimus velit! Repudiandae nisi odit,
-          aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis
-          alias?
+          Looking for a quick way to find the disc to match your desired flight
+          path without browsing for hours at your local disc golf shop? As the
+          sport grows, so does the product selection. Let Disc Finder do all
+          that searching for you. In seconds, find the discs to meet your needs.
         </p>
         <Link to="/search" className="btn hero-btn">
           search discs
@@ -55,7 +55,7 @@ const Wrapper = styled.section`
     }
     .hero-btn {
       padding: 0.75rem 1.5rem;
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     .img-container {
       display: block;
