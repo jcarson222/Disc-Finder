@@ -90,11 +90,11 @@ const NavContainer = styled.nav`
       display: flex;
       justify-content: center;
       li {
-        margin: 0 0.5rem;
+        margin: 0 1rem;
       }
       a {
-        color: var(--clr-grey-3);
-        font-size: 1rem;
+        color: var(--clr-grey-5);
+        font-size: 1.3rem;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;

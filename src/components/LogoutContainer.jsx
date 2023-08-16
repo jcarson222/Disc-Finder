@@ -1,7 +1,7 @@
 import { FaUserCircle, FaCaretDown, FaCaretRight } from "react-icons/fa";
 import { useState } from "react";
-// import { useDashboardContext } from "../pages/DashboardLayout";
 import styled from "styled-components";
+import { tempUser } from "../../utils/constants";
 
 const LogoutContainer = () => {
   const [showLogout, setShowLogout] = useState(false);
@@ -14,7 +14,7 @@ const LogoutContainer = () => {
         onClick={() => setShowLogout(!showLogout)}
       >
         <FaUserCircle />
-        user
+        {tempUser.name}
         {showLogout ? <FaCaretDown /> : <FaCaretRight />}
       </button>
       <div className={showLogout ? "dropdown btn show-dropdown" : "dropdown"}>
@@ -37,12 +37,7 @@ const Logout = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0 0.5rem;
-  }
-  .img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    gap: 0 0.8rem;
   }
   .dropdown {
     position: absolute;
@@ -60,12 +55,12 @@ const Logout = styled.nav`
   }
   .dropdown-btn {
     border-radius: var(--border-radius);
-    padding: 0.2rem;
     background: transparent;
     border-color: transparent;
     color: var(--white);
     letter-spacing: var(--letter-spacing);
     text-transform: capitalize;
+    font-size: 1.3rem;
     cursor: pointer;
     width: 100%;
     height: 100%;

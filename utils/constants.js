@@ -5,13 +5,17 @@ export const links = [
     url: "/",
   },
   {
-    id: 2,
-    text: "profile",
-    url: "/profile",
-  },
-  {
     id: 3,
     text: "search",
     url: "/search",
   },
+  {
+    id: 2,
+    text: "profile",
+    url: "/profile",
+  },
 ];
+
+export const tempUser = {
+  name: "jesse",
+};
