@@ -1,33 +1,53 @@
-import { FaUserCircle, FaCaretDown, FaCaretRight } from "react-icons/fa";
+import { FaCaretDown, FaCaretRight } from "react-icons/fa";
+import { AiOutlineUser } from "react-icons/ai";
 import { useState } from "react";
 import styled from "styled-components";
-import { tempUser } from "../../utils/constants";
 
 const LogoutContainer = () => {
   const [showLogout, setShowLogout] = useState(false);
+
   // console.log(showLogout);
-  return (
-    <Logout>
+  const tempUser = false;
+
+  const UserContainer = () => {
+    return (
+      <>
+        <button
+          type="button"
+          className="btn logout-btn"
+          onClick={() => setShowLogout(!showLogout)}
+        >
+          <AiOutlineUser />
+          User
+          {showLogout ? <FaCaretDown /> : <FaCaretRight />}
+        </button>
+        <div className={showLogout ? "dropdown btn show-dropdown" : "dropdown"}>
+          <button
+            type="button"
+            className="dropdown-btn"
+            onClick={() => console.log("logout")}
+          >
+            logout
+          </button>
+        </div>
+      </>
+    );
+  };
+
+  const LoginContainer = () => {
+    return (
       <button
         type="button"
         className="btn logout-btn"
-        onClick={() => setShowLogout(!showLogout)}
+        onClick={() => console.log("to login page")}
       >
-        <FaUserCircle />
-        {tempUser.name}
-        {showLogout ? <FaCaretDown /> : <FaCaretRight />}
+        <AiOutlineUser />
+        Log in
       </button>
-      <div className={showLogout ? "dropdown btn show-dropdown" : "dropdown"}>
-        <button
-          type="button"
-          className="dropdown-btn"
-          onClick={() => console.log("logout")}
-        >
-          logout
-        </button>
-      </div>
-    </Logout>
-  );
+    );
+  };
+
+  return <Logout>{!tempUser ? <LoginContainer /> : <UserContainer />}</Logout>;
 };
 export default LogoutContainer;
 
@@ -66,3 +86,28 @@ const Logout = styled.nav`
     height: 100%;
   }
 `;
+
+{
+  /* <button
+        type="button"
+        className="btn logout-btn"
+        onClick={() =>
+          !tempUser ? console.log("to login page") : setShowLogout(!showLogout)
+        }
+      >
+        <AiOutlineUser />
+
+        {!tempUser ? "Log in" : "User"}
+
+        {showLogout ? <FaCaretDown /> : <FaCaretRight />}
+      </button>
+      <div className={showLogout ? "dropdown btn show-dropdown" : "dropdown"}>
+        <button
+          type="button"
+          className="dropdown-btn"
+          onClick={() => console.log("logout")}
+        >
+          logout
+        </button>
+      </div> */
+}
