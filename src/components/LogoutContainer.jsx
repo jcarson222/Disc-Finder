@@ -1,4 +1,5 @@
-import { FaUserCircle, FaCaretDown, FaCaretRight } from "react-icons/fa";
+import { FaCaretDown, FaCaretRight } from "react-icons/fa";
+import { AiOutlineUser } from "react-icons/ai";
 import { useState } from "react";
 import styled from "styled-components";
 import { tempUser } from "../../utils/constants";
@@ -13,7 +14,7 @@ const LogoutContainer = () => {
         className="btn logout-btn"
         onClick={() => setShowLogout(!showLogout)}
       >
-        <FaUserCircle />
+        <AiOutlineUser />
         {tempUser.name}
         {showLogout ? <FaCaretDown /> : <FaCaretRight />}
       </button>

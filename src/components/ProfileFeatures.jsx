@@ -32,7 +32,7 @@ const Wrapper = styled.section`
   h4 {
     color: var(--clr-primary-1);
   }
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
 
   background: var(--clr-primary-10);
 
@@ -76,7 +76,7 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 1280px) {
-    padding: 0;
+    padding-bottom: 10rem;
     .section-center {
       transform: translateY(5rem);
     }
