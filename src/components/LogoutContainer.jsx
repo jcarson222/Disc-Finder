@@ -42,7 +42,7 @@ const LogoutContainer = () => {
         onClick={() => console.log("to login page")}
       >
         <AiOutlineUser />
-        Log in
+        Log in / Register
       </button>
     );
   };
