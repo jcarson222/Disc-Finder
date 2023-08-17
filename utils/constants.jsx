@@ -1,3 +1,8 @@
+import React from "react";
+import { GiBackpack } from "react-icons/gi";
+import { PiShootingStar } from "react-icons/pi";
+import { AiOutlineUser } from "react-icons/ai";
+
 export const links = [
   {
     id: 1,
@@ -53,5 +58,26 @@ export const tempDiscs = [
     links: "https://infinitediscs.com/Gateway-Element",
     manufacturer: "Gateway",
     img: "https://infinitediscs.com/Inf_Uploads/DiscProducts/Element.Webp",
+  },
+];
+
+export const profileFeatures = [
+  {
+    id: 2,
+    icon: <AiOutlineUser />,
+    title: "Profile",
+    text: "Create a profile.",
+  },
+  {
+    id: 1,
+    icon: <GiBackpack />,
+    title: "In The Bag",
+    text: "Share the contents of your bag with other users.",
+  },
+  {
+    id: 3,
+    icon: <PiShootingStar />,
+    title: "Wishlist",
+    text: "Keep track of the discs you're interested in trying someday.",
   },
 ];
