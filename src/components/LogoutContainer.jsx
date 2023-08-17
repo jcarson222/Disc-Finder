@@ -86,28 +86,3 @@ const Logout = styled.nav`
     height: 100%;
   }
 `;
-
-{
-  /* <button
-        type="button"
-        className="btn logout-btn"
-        onClick={() =>
-          !tempUser ? console.log("to login page") : setShowLogout(!showLogout)
-        }
-      >
-        <AiOutlineUser />
-
-        {!tempUser ? "Log in" : "User"}
-
-        {showLogout ? <FaCaretDown /> : <FaCaretRight />}
-      </button>
-      <div className={showLogout ? "dropdown btn show-dropdown" : "dropdown"}>
-        <button
-          type="button"
-          className="dropdown-btn"
-          onClick={() => console.log("logout")}
-        >
-          logout
-        </button>
-      </div> */
-}
