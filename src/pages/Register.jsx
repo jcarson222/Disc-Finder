@@ -16,15 +16,17 @@ const Login = () => {
     >
       <Form method="post" className="form">
         <Logo />
-        <h3>login</h3>
+        <h3>register</h3>
+        <FormRow type="name" name="name" labelText="first name" />
+        <FormRow type="lastName" name="lastName" labelText="last name" />
         <FormRow type="email" name="email" />
         <FormRow type="password" name="password" />
         <SubmitBtn />
 
         <p>
-          Not a member yet?
-          <Link to="/register" className="member-btn">
-            Register
+          Already a member?
+          <Link to="/login" className="member-btn">
+            Login
           </Link>
         </p>
       </Form>

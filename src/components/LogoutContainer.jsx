@@ -2,6 +2,7 @@ import { FaCaretDown, FaCaretRight } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const LogoutContainer = () => {
   const [showLogout, setShowLogout] = useState(false);
@@ -36,14 +37,10 @@ const LogoutContainer = () => {
 
   const LoginContainer = () => {
     return (
-      <button
-        type="button"
-        className="btn logout-btn"
-        onClick={() => console.log("to login page")}
-      >
+      <Link to="/login" className="btn logout-btn">
         <AiOutlineUser />
         Log in / Register
-      </button>
+      </Link>
     );
   };
 
