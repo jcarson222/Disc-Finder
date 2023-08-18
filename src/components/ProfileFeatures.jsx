@@ -7,7 +7,11 @@ const ProfileFeatures = () => {
     <Wrapper>
       <div className="section-center">
         <article className="title">
-          <h2>create a profile</h2>
+          <h2>profile features</h2>
+          <p>
+            Register to take advantage of the personalized features Disc Finder
+            has to offer!
+          </p>
           <div className="underline" />
         </article>
         <div className="features-center">
@@ -30,15 +34,16 @@ const ProfileFeatures = () => {
 const Wrapper = styled.section`
   h2,
   h4 {
-    color: var(--clr-primary-1);
+    color: var(--clr-grey-1);
   }
   /* padding: 5rem 0; */
 
   background: var(--clr-primary-10);
 
   p {
-    margin-bottom: 0;
-    line-height: 1.8;
+    margin-bottom: 2;
+    line-height: 2;
+    font-size: 1.2rem;
     color: var(--clr-primary-3);
   }
   .features-center {
@@ -47,26 +52,27 @@ const Wrapper = styled.section`
     gap: 2.5rem;
   }
   .feature {
-    background: var(--clr-primary-7);
+    background: var(--clr-grey-8);
     text-align: center;
     padding: 2.5rem 2rem;
-    border-radius: var(--radius);
+    border-radius: 20%;
+    box-shadow: var(--shadow-2);
     p {
-      color: var(--clr-primary-2);
+      color: var(--clr-grey-1);
     }
   }
   span {
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     display: grid;
     margin: 0 auto;
     place-items: center;
     margin-bottom: 1rem;
-    border-radius: 50%;
-    background: var(--clr-primary-10);
-    color: var(--clr-primary-1);
+    border-radius: 20%;
+    background: transparent;
+    color: var(--clr-grey-1);
     svg {
-      font-size: 2rem;
+      font-size: 6rem;
     }
   }
 

@@ -1,7 +1,14 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 // import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { UserProfile, Search, Home, HomeLayout } from "./pages";
+import {
+  UserProfile,
+  Search,
+  Home,
+  HomeLayout,
+  Login,
+  Register,
+} from "./pages";
 
 // const queryClient = new QueryClient({
 //   defaultOptions: {
@@ -29,17 +36,17 @@ const router = createBrowserRouter([
         path: "profile",
         element: <UserProfile />,
       },
-      // {
-      //   path: "register",
-      //   element: <Register />,
-      //   action: registerAction,
-      // },
-      // {
-      //   path: "login",
-      //   element: <Login />,
-      //   action: loginAction,
-      // },
     ],
+  },
+  {
+    path: "login",
+    element: <Login />,
+    // action: loginAction,
+  },
+  {
+    path: "register",
+    element: <Register />,
+    // action: registerAction,
   },
 ]);
 

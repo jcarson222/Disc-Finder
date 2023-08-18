@@ -2,6 +2,7 @@ import { FaCaretDown, FaCaretRight } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const LogoutContainer = () => {
   const [showLogout, setShowLogout] = useState(false);
@@ -36,14 +37,10 @@ const LogoutContainer = () => {
 
   const LoginContainer = () => {
     return (
-      <button
-        type="button"
-        className="btn logout-btn"
-        onClick={() => console.log("to login page")}
-      >
+      <Link to="/login" className="btn logout-btn">
         <AiOutlineUser />
-        Log in
-      </button>
+        Log in / Register
+      </Link>
     );
   };
 
@@ -86,28 +83,3 @@ const Logout = styled.nav`
     height: 100%;
   }
 `;
-
-{
-  /* <button
-        type="button"
-        className="btn logout-btn"
-        onClick={() =>
-          !tempUser ? console.log("to login page") : setShowLogout(!showLogout)
-        }
-      >
-        <AiOutlineUser />
-
-        {!tempUser ? "Log in" : "User"}
-
-        {showLogout ? <FaCaretDown /> : <FaCaretRight />}
-      </button>
-      <div className={showLogout ? "dropdown btn show-dropdown" : "dropdown"}>
-        <button
-          type="button"
-          className="dropdown-btn"
-          onClick={() => console.log("logout")}
-        >
-          logout
-        </button>
-      </div> */
-}
