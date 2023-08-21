@@ -43,7 +43,7 @@ const Wrapper = styled.section`
   p {
     margin-bottom: 2;
     line-height: 2;
-    font-size: 1.2rem;
+
     color: var(--clr-primary-3);
   }
   .features-center {

@@ -84,12 +84,11 @@ const Wrapper = styled.article`
   footer h5,
   footer p {
     margin-bottom: 0;
-    font-weight: 500;
   }
 
   footer p {
     color: var(--clr-primary-5);
-    letter-spacing: var(--spacing);
+
     font-size: 20px;
   }
 

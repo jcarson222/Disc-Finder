@@ -6,7 +6,7 @@ import discs from "../assets/disc-shopping.webp";
 const Hero = () => {
   return (
     <Wrapper className="section-center">
-      <article className="content">
+      <article>
         <h1>
           find the <br />
           perfect flight

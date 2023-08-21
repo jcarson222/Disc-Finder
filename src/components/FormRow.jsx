@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FormRow = ({ type, name, labelText, defaultValue, onChange }) => {
+const FormRow = ({ type, name, labelText, value, defaultValue, onChange }) => {
   return (
     <Wrapper>
       <div className="form-row">
@@ -13,6 +13,7 @@ const FormRow = ({ type, name, labelText, defaultValue, onChange }) => {
           name={name}
           className="form-input"
           defaultValue={defaultValue || ""}
+          value={value}
           onChange={onChange}
           required
         />

@@ -103,7 +103,8 @@ h2,
 h3,
 h4,
 h5 {
-  letter-spacing: var(--spacing);
+  letter-spacing: var(--letter-spacing);
+  font-weight: 300;
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -126,6 +127,7 @@ h5 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-3);
+  font-weight: 280;
 }
 @media screen and (min-width: 800px) {
   h1 {

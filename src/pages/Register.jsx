@@ -17,8 +17,8 @@ const Login = () => {
       <Form method="post" className="form">
         <Logo />
         <h3>register</h3>
-        <FormRow type="name" name="name" labelText="first name" />
-        <FormRow type="lastName" name="lastName" labelText="last name" />
+        <FormRow type="text" name="name" labelText="first name" />
+        <FormRow type="text" name="lastName" labelText="last name" />
         <FormRow type="email" name="email" />
         <FormRow type="password" name="password" />
         <SubmitBtn />
